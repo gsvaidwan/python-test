@@ -34,7 +34,7 @@ print(df)
 # using dropna() function  
 print(df.dropna())
 
-
+import pandas as pd
 # Define a dictionary containing Students data
 data = {'Name': ['Jai', 'Princi', 'Gaurav', 'Anuj'],
 	'Height': [5.1, 6.2, 5.1, 5.2],
