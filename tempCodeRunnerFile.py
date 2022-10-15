@@ -1,11 +1,17 @@
-s = input("Input a string")
-d=l=0
-for c in s:
-    if c.isdigit():
-        d=d+1
-    elif c.isalpha():
-        l=l+1
-    else:
-        pass
-print("Letters", l)
-print("Digits", d)
+# importing pandas module
+import pandas as pd
+
+# importing regex module
+# import re
+	
+# making data frame
+data = pd.read_csv("nba.csv")
+	
+# removing null values to avoid errors
+data.dropna(inplace = True)
+
+# calling describe method
+desc = data["Name"].describe()
+
+# display
+print(desc)
